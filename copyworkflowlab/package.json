@@ -1,0 +1,31 @@
+{
+  "name": "copyworkflowlab",
+  "version": "0.1.0",
+  "description": "AI Workflow Orchestration Platform",
+  "scripts": {
+    "start": "concurrently \"npm run start:backend\" \"npm run start:frontend\"",
+    "start:backend": "cd backend && ts-node server.ts",
+    "start:frontend": "cd frontend && npm run dev",
+    "build": "concurrently \"npm run build:backend\" \"npm run build:frontend\"",
+    "build:backend": "cd backend && tsc",
+    "build:frontend": "cd frontend && npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "body-parser": "^1.20.2",
+    "events": "^3.3.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/cors": "^2.8.13",
+    "@types/body-parser": "^1.19.2",
+    "@types/node": "^18.15.11",
+    "@types/react": "^18.0.33",
+    "@types/react-dom": "^18.0.11",
+    "typescript": "^5.0.4",
+    "ts-node": "^10.9.1",
+    "concurrently": "^8.0.1"
+  }
+} 
