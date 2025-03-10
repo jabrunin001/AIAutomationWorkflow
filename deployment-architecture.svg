@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#f8f9fa" />
+  
+  <!-- Containers -->
+  <rect x="30" y="180" width="740" height="290" rx="5" fill="#e9ecef" stroke="#495057" stroke-width="2" />
+  <text x="45" y="205" font-family="Arial" font-size="16" fill="#212529">Cloud Infrastructure</text>
+  
+  <!-- Frontend Container -->
+  <rect x="60" y="230" width="180" height="100" rx="5" fill="#fff" stroke="#0d6efd" stroke-width="2" />
+  <text x="150" y="255" font-family="Arial" font-size="14" text-anchor="middle" fill="#0d6efd">Frontend</text>
+  <rect x="80" y="270" width="140" height="40" rx="3" fill="#e6f2ff" stroke="#0d6efd" stroke-width="1" />
+  <text x="150" y="295" font-family="Arial" font-size="12" text-anchor="middle" fill="#0d6efd">Next.js App</text>
+  
+  <!-- Backend Container -->
+  <rect x="310" y="230" width="180" height="160" rx="5" fill="#fff" stroke="#198754" stroke-width="2" />
+  <text x="400" y="255" font-family="Arial" font-size="14" text-anchor="middle" fill="#198754">Backend</text>
+  <rect x="330" y="270" width="140" height="30" rx="3" fill="#e6fff2" stroke="#198754" stroke-width="1" />
+  <text x="400" y="290" font-family="Arial" font-size="12" text-anchor="middle" fill="#198754">API Server</text>
+  <rect x="330" y="310" width="140" height="30" rx="3" fill="#e6fff2" stroke="#198754" stroke-width="1" />
+  <text x="400" y="330" font-family="Arial" font-size="12" text-anchor="middle" fill="#198754">Workflow Engine</text>
+  <rect x="330" y="350" width="140" height="30" rx="3" fill="#e6fff2" stroke="#198754" stroke-width="1" />
+  <text x="400" y="370" font-family="Arial" font-size="12" text-anchor="middle" fill="#198754">Integration Adapters</text>
+  
+  <!-- Database Container -->
+  <rect x="560" y="230" width="180" height="70" rx="5" fill="#fff" stroke="#6f42c1" stroke-width="2" />
+  <text x="650" y="255" font-family="Arial" font-size="14" text-anchor="middle" fill="#6f42c1">Database</text>
+  <rect x="580" y="270" width="140" height="20" rx="3" fill="#f2e6ff" stroke="#6f42c1" stroke-width="1" />
+  <text x="650" y="285" font-family="Arial" font-size="12" text-anchor="middle" fill="#6f42c1">PostgreSQL</text>
+  
+  <!-- Queue Container -->
+  <rect x="560" y="320" width="180" height="70" rx="5" fill="#fff" stroke="#dc3545" stroke-width="2" />
+  <text x="650" y="345" font-family="Arial" font-size="14" text-anchor="middle" fill="#dc3545">Queue</text>
+  <rect x="580" y="360" width="140" height="20" rx="3" fill="#ffe6e6" stroke="#dc3545" stroke-width="1" />
+  <text x="650" y="375" font-family="Arial" font-size="12" text-anchor="middle" fill="#dc3545">Redis</text>
+  
+  <!-- Load Balancer -->
+  <rect x="310" y="120" width="180" height="50" rx="5" fill="#fff" stroke="#fd7e14" stroke-width="2" />
+  <text x="400" y="150" font-family="Arial" font-size="14" text-anchor="middle" fill="#fd7e14">Load Balancer</text>
+  
+  <!-- External Services -->
+  <rect x="100" y="40" width="600" height="40" rx="5" fill="#fff" stroke="#20c997" stroke-width="2" />
+  <text x="400" y="65" font-family="Arial" font-size="14" text-anchor="middle" fill="#20c997">External Services (OpenAI, AWS, Slack, etc.)</text>
+  
+  <!-- Connections -->
+  <!-- User to LB -->
+  <path d="M 400 80 L 400 120" stroke="#adb5bd" stroke-width="2" fill="none" />
+  <!-- LB to Frontend -->
+  <path d="M 310 145 L 150 230" stroke="#adb5bd" stroke-width="2" fill="none" />
+  <!-- LB to Backend -->
+  <path d="M 400 170 L 400 230" stroke="#adb5bd" stroke-width="2" fill="none" />
+  <!-- Frontend to Backend -->
+  <path d="M 240 280 L 310 280" stroke="#adb5bd" stroke-width="2" fill="none" />
+  <!-- Backend to DB -->
+  <path d="M 490 260 L 560 260" stroke="#adb5bd" stroke-width="2" fill="none" />
+  <!-- Backend to Queue -->
+  <path d="M 490 330 L 560 350" stroke="#adb5bd" stroke-width="2" fill="none" />
+  <!-- Backend to External -->
+  <path d="M 400 230 L 400 80" stroke="#adb5bd" stroke-width="2" fill="none" />
+  
+  <!-- User -->
+  <circle cx="400" cy="20" r="15" fill="#f8f9fa" stroke="#212529" stroke-width="2" />
+  <path d="M 400 5 L 400 -15" stroke="#212529" stroke-width="0" fill="none" />
+  <path d="M 395 25 L 405 25" stroke="#212529" stroke-width="2" fill="none" />
+  <path d="M 390 20 L 410 20" stroke="#212529" stroke-width="2" fill="none" />
+  
+  <!-- Scaling Note -->
+  <text x="70" y="440" font-family="Arial" font-size="14" fill="#495057">* All components containerized for horizontal scaling</text>
+</svg>
